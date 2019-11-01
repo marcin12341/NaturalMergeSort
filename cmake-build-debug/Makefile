@@ -48,10 +48,10 @@ RM = /home/marcin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marcin/Dokumenty/projects/mergesort
+CMAKE_SOURCE_DIR = /home/marcin/Dokumenty/projects/NaturalMergeSort
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marcin/Dokumenty/projects/mergesort/cmake-build-debug
+CMAKE_BINARY_DIR = /home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marcin/Dokumenty/projects/mergesort/cmake-build-debug/CMakeFiles /home/marcin/Dokumenty/projects/mergesort/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug/CMakeFiles /home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marcin/Dokumenty/projects/mergesort/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mergesort
+# Target rules for targets named NaturalMergeSort
 
 # Build rule for target.
-mergesort: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mergesort
-.PHONY : mergesort
+NaturalMergeSort: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 NaturalMergeSort
+.PHONY : NaturalMergeSort
 
 # fast build rule for target.
-mergesort/fast:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/build
-.PHONY : mergesort/fast
+NaturalMergeSort/fast:
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/build
+.PHONY : NaturalMergeSort/fast
 
 Buffer.o: Buffer.cpp.o
 
@@ -129,7 +129,7 @@ Buffer.o: Buffer.cpp.o
 
 # target to build an object file
 Buffer.cpp.o:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/Buffer.cpp.o
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/Buffer.cpp.o
 .PHONY : Buffer.cpp.o
 
 Buffer.i: Buffer.cpp.i
@@ -138,7 +138,7 @@ Buffer.i: Buffer.cpp.i
 
 # target to preprocess a source file
 Buffer.cpp.i:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/Buffer.cpp.i
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/Buffer.cpp.i
 .PHONY : Buffer.cpp.i
 
 Buffer.s: Buffer.cpp.s
@@ -147,7 +147,7 @@ Buffer.s: Buffer.cpp.s
 
 # target to generate assembly for a file
 Buffer.cpp.s:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/Buffer.cpp.s
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/Buffer.cpp.s
 .PHONY : Buffer.cpp.s
 
 File.o: File.cpp.o
@@ -156,7 +156,7 @@ File.o: File.cpp.o
 
 # target to build an object file
 File.cpp.o:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/File.cpp.o
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/File.cpp.o
 .PHONY : File.cpp.o
 
 File.i: File.cpp.i
@@ -165,7 +165,7 @@ File.i: File.cpp.i
 
 # target to preprocess a source file
 File.cpp.i:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/File.cpp.i
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/File.cpp.i
 .PHONY : File.cpp.i
 
 File.s: File.cpp.s
@@ -174,7 +174,7 @@ File.s: File.cpp.s
 
 # target to generate assembly for a file
 File.cpp.s:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/File.cpp.s
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/File.cpp.s
 .PHONY : File.cpp.s
 
 NaturalMergeSort.o: NaturalMergeSort.cpp.o
@@ -183,7 +183,7 @@ NaturalMergeSort.o: NaturalMergeSort.cpp.o
 
 # target to build an object file
 NaturalMergeSort.cpp.o:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/NaturalMergeSort.cpp.o
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/NaturalMergeSort.cpp.o
 .PHONY : NaturalMergeSort.cpp.o
 
 NaturalMergeSort.i: NaturalMergeSort.cpp.i
@@ -192,7 +192,7 @@ NaturalMergeSort.i: NaturalMergeSort.cpp.i
 
 # target to preprocess a source file
 NaturalMergeSort.cpp.i:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/NaturalMergeSort.cpp.i
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/NaturalMergeSort.cpp.i
 .PHONY : NaturalMergeSort.cpp.i
 
 NaturalMergeSort.s: NaturalMergeSort.cpp.s
@@ -201,7 +201,7 @@ NaturalMergeSort.s: NaturalMergeSort.cpp.s
 
 # target to generate assembly for a file
 NaturalMergeSort.cpp.s:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/NaturalMergeSort.cpp.s
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/NaturalMergeSort.cpp.s
 .PHONY : NaturalMergeSort.cpp.s
 
 Probability.o: Probability.cpp.o
@@ -210,7 +210,7 @@ Probability.o: Probability.cpp.o
 
 # target to build an object file
 Probability.cpp.o:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/Probability.cpp.o
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/Probability.cpp.o
 .PHONY : Probability.cpp.o
 
 Probability.i: Probability.cpp.i
@@ -219,7 +219,7 @@ Probability.i: Probability.cpp.i
 
 # target to preprocess a source file
 Probability.cpp.i:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/Probability.cpp.i
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/Probability.cpp.i
 .PHONY : Probability.cpp.i
 
 Probability.s: Probability.cpp.s
@@ -228,7 +228,7 @@ Probability.s: Probability.cpp.s
 
 # target to generate assembly for a file
 Probability.cpp.s:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/Probability.cpp.s
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/Probability.cpp.s
 .PHONY : Probability.cpp.s
 
 ReadBuffer.o: ReadBuffer.cpp.o
@@ -237,7 +237,7 @@ ReadBuffer.o: ReadBuffer.cpp.o
 
 # target to build an object file
 ReadBuffer.cpp.o:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/ReadBuffer.cpp.o
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/ReadBuffer.cpp.o
 .PHONY : ReadBuffer.cpp.o
 
 ReadBuffer.i: ReadBuffer.cpp.i
@@ -246,7 +246,7 @@ ReadBuffer.i: ReadBuffer.cpp.i
 
 # target to preprocess a source file
 ReadBuffer.cpp.i:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/ReadBuffer.cpp.i
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/ReadBuffer.cpp.i
 .PHONY : ReadBuffer.cpp.i
 
 ReadBuffer.s: ReadBuffer.cpp.s
@@ -255,7 +255,7 @@ ReadBuffer.s: ReadBuffer.cpp.s
 
 # target to generate assembly for a file
 ReadBuffer.cpp.s:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/ReadBuffer.cpp.s
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/ReadBuffer.cpp.s
 .PHONY : ReadBuffer.cpp.s
 
 WriteBuffer.o: WriteBuffer.cpp.o
@@ -264,7 +264,7 @@ WriteBuffer.o: WriteBuffer.cpp.o
 
 # target to build an object file
 WriteBuffer.cpp.o:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/WriteBuffer.cpp.o
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/WriteBuffer.cpp.o
 .PHONY : WriteBuffer.cpp.o
 
 WriteBuffer.i: WriteBuffer.cpp.i
@@ -273,7 +273,7 @@ WriteBuffer.i: WriteBuffer.cpp.i
 
 # target to preprocess a source file
 WriteBuffer.cpp.i:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/WriteBuffer.cpp.i
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/WriteBuffer.cpp.i
 .PHONY : WriteBuffer.cpp.i
 
 WriteBuffer.s: WriteBuffer.cpp.s
@@ -282,7 +282,7 @@ WriteBuffer.s: WriteBuffer.cpp.s
 
 # target to generate assembly for a file
 WriteBuffer.cpp.s:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/WriteBuffer.cpp.s
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/WriteBuffer.cpp.s
 .PHONY : WriteBuffer.cpp.s
 
 globals.o: globals.cpp.o
@@ -291,7 +291,7 @@ globals.o: globals.cpp.o
 
 # target to build an object file
 globals.cpp.o:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/globals.cpp.o
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/globals.cpp.o
 .PHONY : globals.cpp.o
 
 globals.i: globals.cpp.i
@@ -300,7 +300,7 @@ globals.i: globals.cpp.i
 
 # target to preprocess a source file
 globals.cpp.i:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/globals.cpp.i
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/globals.cpp.i
 .PHONY : globals.cpp.i
 
 globals.s: globals.cpp.s
@@ -309,7 +309,7 @@ globals.s: globals.cpp.s
 
 # target to generate assembly for a file
 globals.cpp.s:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/globals.cpp.s
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/globals.cpp.s
 .PHONY : globals.cpp.s
 
 # Help Target
@@ -319,7 +319,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... mergesort"
+	@echo "... NaturalMergeSort"
 	@echo "... edit_cache"
 	@echo "... Buffer.o"
 	@echo "... Buffer.i"

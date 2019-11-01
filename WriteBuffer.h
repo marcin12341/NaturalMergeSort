@@ -2,9 +2,9 @@
 #include "Buffer.h"
 class WriteBuffer : public Buffer
 {
+private:
+    char print;
 public:
-	char print;
-
 	explicit WriteBuffer(File* file);
 	WriteBuffer(File* file, char print);
 	~WriteBuffer();

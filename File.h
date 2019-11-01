@@ -9,6 +9,7 @@ private:
 public:
 	File(std::string name, int place);
 	~File();
+
 	std::string getFilename() { return filename; }
 	int getPlaceInFile() { return placeInFile; }
 	void setPlaceInFile(int place) { placeInFile = place; }

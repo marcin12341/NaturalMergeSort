@@ -44,21 +44,21 @@ RM = /home/marcin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marcin/Dokumenty/projects/mergesort
+CMAKE_SOURCE_DIR = /home/marcin/Dokumenty/projects/NaturalMergeSort
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marcin/Dokumenty/projects/mergesort/cmake-build-debug
+CMAKE_BINARY_DIR = /home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/mergesort.dir/all
+all: CMakeFiles/NaturalMergeSort.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/mergesort.dir/clean
+clean: CMakeFiles/NaturalMergeSort.dir/clean
 
 .PHONY : clean
 
@@ -68,31 +68,31 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/mergesort.dir
+# Target rules for target CMakeFiles/NaturalMergeSort.dir
 
 # All Build rule for target.
-CMakeFiles/mergesort.dir/all:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/depend
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marcin/Dokumenty/projects/mergesort/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target mergesort"
-.PHONY : CMakeFiles/mergesort.dir/all
+CMakeFiles/NaturalMergeSort.dir/all:
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/depend
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target NaturalMergeSort"
+.PHONY : CMakeFiles/NaturalMergeSort.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/mergesort.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marcin/Dokumenty/projects/mergesort/cmake-build-debug/CMakeFiles 8
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mergesort.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marcin/Dokumenty/projects/mergesort/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/mergesort.dir/rule
+CMakeFiles/NaturalMergeSort.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NaturalMergeSort.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/NaturalMergeSort.dir/rule
 
 # Convenience name for target.
-mergesort: CMakeFiles/mergesort.dir/rule
+NaturalMergeSort: CMakeFiles/NaturalMergeSort.dir/rule
 
-.PHONY : mergesort
+.PHONY : NaturalMergeSort
 
 # clean rule for target.
-CMakeFiles/mergesort.dir/clean:
-	$(MAKE) -f CMakeFiles/mergesort.dir/build.make CMakeFiles/mergesort.dir/clean
-.PHONY : CMakeFiles/mergesort.dir/clean
+CMakeFiles/NaturalMergeSort.dir/clean:
+	$(MAKE) -f CMakeFiles/NaturalMergeSort.dir/build.make CMakeFiles/NaturalMergeSort.dir/clean
+.PHONY : CMakeFiles/NaturalMergeSort.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

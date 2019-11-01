@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.15)
-project(mergesort)
+project(NaturalMergeSort)
 
 set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 
-add_executable(mergesort
+add_executable(NaturalMergeSort
         Buffer.cpp
         Buffer.h
         File.cpp

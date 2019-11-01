@@ -6,13 +6,13 @@
 #include <fstream>
 class Buffer
 {
+private:
+protected:
+    Probability* buffer;
+    int current;
+    int bufferSize;
+    File* file{};
 public:
-
-	Probability* buffer;
-	int current;
-	int bufferSize;
-	File* file;
-
 	Buffer();
 	~Buffer();
 };

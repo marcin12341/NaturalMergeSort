@@ -43,10 +43,10 @@ RM = /home/marcin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marcin/Dokumenty/projects/mergesort
+CMAKE_SOURCE_DIR = /home/marcin/Dokumenty/projects/NaturalMergeSort
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marcin/Dokumenty/projects/mergesort/cmake-build-debug
+CMAKE_BINARY_DIR = /home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/mergesort.dir/depend.make
@@ -59,94 +59,94 @@ include CMakeFiles/mergesort.dir/flags.make
 
 CMakeFiles/mergesort.dir/Buffer.cpp.o: CMakeFiles/mergesort.dir/flags.make
 CMakeFiles/mergesort.dir/Buffer.cpp.o: ../Buffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcin/Dokumenty/projects/mergesort/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mergesort.dir/Buffer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mergesort.dir/Buffer.cpp.o -c /home/marcin/Dokumenty/projects/mergesort/Buffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mergesort.dir/Buffer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mergesort.dir/Buffer.cpp.o -c /home/marcin/Dokumenty/projects/NaturalMergeSort/Buffer.cpp
 
 CMakeFiles/mergesort.dir/Buffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mergesort.dir/Buffer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcin/Dokumenty/projects/mergesort/Buffer.cpp > CMakeFiles/mergesort.dir/Buffer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcin/Dokumenty/projects/NaturalMergeSort/Buffer.cpp > CMakeFiles/mergesort.dir/Buffer.cpp.i
 
 CMakeFiles/mergesort.dir/Buffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mergesort.dir/Buffer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcin/Dokumenty/projects/mergesort/Buffer.cpp -o CMakeFiles/mergesort.dir/Buffer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcin/Dokumenty/projects/NaturalMergeSort/Buffer.cpp -o CMakeFiles/mergesort.dir/Buffer.cpp.s
 
 CMakeFiles/mergesort.dir/File.cpp.o: CMakeFiles/mergesort.dir/flags.make
 CMakeFiles/mergesort.dir/File.cpp.o: ../File.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcin/Dokumenty/projects/mergesort/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mergesort.dir/File.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mergesort.dir/File.cpp.o -c /home/marcin/Dokumenty/projects/mergesort/File.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mergesort.dir/File.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mergesort.dir/File.cpp.o -c /home/marcin/Dokumenty/projects/NaturalMergeSort/File.cpp
 
 CMakeFiles/mergesort.dir/File.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mergesort.dir/File.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcin/Dokumenty/projects/mergesort/File.cpp > CMakeFiles/mergesort.dir/File.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcin/Dokumenty/projects/NaturalMergeSort/File.cpp > CMakeFiles/mergesort.dir/File.cpp.i
 
 CMakeFiles/mergesort.dir/File.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mergesort.dir/File.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcin/Dokumenty/projects/mergesort/File.cpp -o CMakeFiles/mergesort.dir/File.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcin/Dokumenty/projects/NaturalMergeSort/File.cpp -o CMakeFiles/mergesort.dir/File.cpp.s
 
 CMakeFiles/mergesort.dir/globals.cpp.o: CMakeFiles/mergesort.dir/flags.make
 CMakeFiles/mergesort.dir/globals.cpp.o: ../globals.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcin/Dokumenty/projects/mergesort/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mergesort.dir/globals.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mergesort.dir/globals.cpp.o -c /home/marcin/Dokumenty/projects/mergesort/globals.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mergesort.dir/globals.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mergesort.dir/globals.cpp.o -c /home/marcin/Dokumenty/projects/NaturalMergeSort/globals.cpp
 
 CMakeFiles/mergesort.dir/globals.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mergesort.dir/globals.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcin/Dokumenty/projects/mergesort/globals.cpp > CMakeFiles/mergesort.dir/globals.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcin/Dokumenty/projects/NaturalMergeSort/globals.cpp > CMakeFiles/mergesort.dir/globals.cpp.i
 
 CMakeFiles/mergesort.dir/globals.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mergesort.dir/globals.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcin/Dokumenty/projects/mergesort/globals.cpp -o CMakeFiles/mergesort.dir/globals.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcin/Dokumenty/projects/NaturalMergeSort/globals.cpp -o CMakeFiles/mergesort.dir/globals.cpp.s
 
 CMakeFiles/mergesort.dir/NaturalMergeSort.cpp.o: CMakeFiles/mergesort.dir/flags.make
 CMakeFiles/mergesort.dir/NaturalMergeSort.cpp.o: ../NaturalMergeSort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcin/Dokumenty/projects/mergesort/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mergesort.dir/NaturalMergeSort.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mergesort.dir/NaturalMergeSort.cpp.o -c /home/marcin/Dokumenty/projects/mergesort/NaturalMergeSort.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mergesort.dir/NaturalMergeSort.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mergesort.dir/NaturalMergeSort.cpp.o -c /home/marcin/Dokumenty/projects/NaturalMergeSort/NaturalMergeSort.cpp
 
 CMakeFiles/mergesort.dir/NaturalMergeSort.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mergesort.dir/NaturalMergeSort.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcin/Dokumenty/projects/mergesort/NaturalMergeSort.cpp > CMakeFiles/mergesort.dir/NaturalMergeSort.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcin/Dokumenty/projects/NaturalMergeSort/NaturalMergeSort.cpp > CMakeFiles/mergesort.dir/NaturalMergeSort.cpp.i
 
 CMakeFiles/mergesort.dir/NaturalMergeSort.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mergesort.dir/NaturalMergeSort.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcin/Dokumenty/projects/mergesort/NaturalMergeSort.cpp -o CMakeFiles/mergesort.dir/NaturalMergeSort.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcin/Dokumenty/projects/NaturalMergeSort/NaturalMergeSort.cpp -o CMakeFiles/mergesort.dir/NaturalMergeSort.cpp.s
 
 CMakeFiles/mergesort.dir/Probability.cpp.o: CMakeFiles/mergesort.dir/flags.make
 CMakeFiles/mergesort.dir/Probability.cpp.o: ../Probability.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcin/Dokumenty/projects/mergesort/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mergesort.dir/Probability.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mergesort.dir/Probability.cpp.o -c /home/marcin/Dokumenty/projects/mergesort/Probability.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mergesort.dir/Probability.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mergesort.dir/Probability.cpp.o -c /home/marcin/Dokumenty/projects/NaturalMergeSort/Probability.cpp
 
 CMakeFiles/mergesort.dir/Probability.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mergesort.dir/Probability.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcin/Dokumenty/projects/mergesort/Probability.cpp > CMakeFiles/mergesort.dir/Probability.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcin/Dokumenty/projects/NaturalMergeSort/Probability.cpp > CMakeFiles/mergesort.dir/Probability.cpp.i
 
 CMakeFiles/mergesort.dir/Probability.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mergesort.dir/Probability.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcin/Dokumenty/projects/mergesort/Probability.cpp -o CMakeFiles/mergesort.dir/Probability.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcin/Dokumenty/projects/NaturalMergeSort/Probability.cpp -o CMakeFiles/mergesort.dir/Probability.cpp.s
 
 CMakeFiles/mergesort.dir/ReadBuffer.cpp.o: CMakeFiles/mergesort.dir/flags.make
 CMakeFiles/mergesort.dir/ReadBuffer.cpp.o: ../ReadBuffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcin/Dokumenty/projects/mergesort/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mergesort.dir/ReadBuffer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mergesort.dir/ReadBuffer.cpp.o -c /home/marcin/Dokumenty/projects/mergesort/ReadBuffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mergesort.dir/ReadBuffer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mergesort.dir/ReadBuffer.cpp.o -c /home/marcin/Dokumenty/projects/NaturalMergeSort/ReadBuffer.cpp
 
 CMakeFiles/mergesort.dir/ReadBuffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mergesort.dir/ReadBuffer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcin/Dokumenty/projects/mergesort/ReadBuffer.cpp > CMakeFiles/mergesort.dir/ReadBuffer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcin/Dokumenty/projects/NaturalMergeSort/ReadBuffer.cpp > CMakeFiles/mergesort.dir/ReadBuffer.cpp.i
 
 CMakeFiles/mergesort.dir/ReadBuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mergesort.dir/ReadBuffer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcin/Dokumenty/projects/mergesort/ReadBuffer.cpp -o CMakeFiles/mergesort.dir/ReadBuffer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcin/Dokumenty/projects/NaturalMergeSort/ReadBuffer.cpp -o CMakeFiles/mergesort.dir/ReadBuffer.cpp.s
 
 CMakeFiles/mergesort.dir/WriteBuffer.cpp.o: CMakeFiles/mergesort.dir/flags.make
 CMakeFiles/mergesort.dir/WriteBuffer.cpp.o: ../WriteBuffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcin/Dokumenty/projects/mergesort/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mergesort.dir/WriteBuffer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mergesort.dir/WriteBuffer.cpp.o -c /home/marcin/Dokumenty/projects/mergesort/WriteBuffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mergesort.dir/WriteBuffer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mergesort.dir/WriteBuffer.cpp.o -c /home/marcin/Dokumenty/projects/NaturalMergeSort/WriteBuffer.cpp
 
 CMakeFiles/mergesort.dir/WriteBuffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mergesort.dir/WriteBuffer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcin/Dokumenty/projects/mergesort/WriteBuffer.cpp > CMakeFiles/mergesort.dir/WriteBuffer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcin/Dokumenty/projects/NaturalMergeSort/WriteBuffer.cpp > CMakeFiles/mergesort.dir/WriteBuffer.cpp.i
 
 CMakeFiles/mergesort.dir/WriteBuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mergesort.dir/WriteBuffer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcin/Dokumenty/projects/mergesort/WriteBuffer.cpp -o CMakeFiles/mergesort.dir/WriteBuffer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcin/Dokumenty/projects/NaturalMergeSort/WriteBuffer.cpp -o CMakeFiles/mergesort.dir/WriteBuffer.cpp.s
 
 # Object files for target mergesort
 mergesort_OBJECTS = \
@@ -170,7 +170,7 @@ mergesort: CMakeFiles/mergesort.dir/ReadBuffer.cpp.o
 mergesort: CMakeFiles/mergesort.dir/WriteBuffer.cpp.o
 mergesort: CMakeFiles/mergesort.dir/build.make
 mergesort: CMakeFiles/mergesort.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/marcin/Dokumenty/projects/mergesort/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable mergesort"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable mergesort"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mergesort.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -183,6 +183,6 @@ CMakeFiles/mergesort.dir/clean:
 .PHONY : CMakeFiles/mergesort.dir/clean
 
 CMakeFiles/mergesort.dir/depend:
-	cd /home/marcin/Dokumenty/projects/mergesort/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marcin/Dokumenty/projects/mergesort /home/marcin/Dokumenty/projects/mergesort /home/marcin/Dokumenty/projects/mergesort/cmake-build-debug /home/marcin/Dokumenty/projects/mergesort/cmake-build-debug /home/marcin/Dokumenty/projects/mergesort/cmake-build-debug/CMakeFiles/mergesort.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marcin/Dokumenty/projects/NaturalMergeSort /home/marcin/Dokumenty/projects/NaturalMergeSort /home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug /home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug /home/marcin/Dokumenty/projects/NaturalMergeSort/cmake-build-debug/CMakeFiles/mergesort.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/mergesort.dir/depend
 
