@@ -1,0 +1,3 @@
+/home/marcin/Dokumenty/projects/mergesort/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/marcin/Dokumenty/projects/mergesort/cmake-build-debug/CMakeFiles/mergesort.dir
+/home/marcin/Dokumenty/projects/mergesort/cmake-build-debug/CMakeFiles/edit_cache.dir

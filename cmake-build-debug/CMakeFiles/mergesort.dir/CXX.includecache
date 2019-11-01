@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/marcin/Dokumenty/projects/mergesort/Buffer.h
+Probability.h
+/home/marcin/Dokumenty/projects/mergesort/Probability.h
+File.h
+/home/marcin/Dokumenty/projects/mergesort/File.h
+globals.h
+/home/marcin/Dokumenty/projects/mergesort/globals.h
+fstream
+-
+
+/home/marcin/Dokumenty/projects/mergesort/File.h
+iostream
+-
+string
+-
+
+/home/marcin/Dokumenty/projects/mergesort/NaturalMergeSort.cpp
+utility
+-
+WriteBuffer.h
+/home/marcin/Dokumenty/projects/mergesort/WriteBuffer.h
+ReadBuffer.h
+/home/marcin/Dokumenty/projects/mergesort/ReadBuffer.h
+
+/home/marcin/Dokumenty/projects/mergesort/Probability.h
+ctime
+-
+
+/home/marcin/Dokumenty/projects/mergesort/ReadBuffer.h
+Buffer.h
+/home/marcin/Dokumenty/projects/mergesort/Buffer.h
+
+/home/marcin/Dokumenty/projects/mergesort/WriteBuffer.h
+Buffer.h
+/home/marcin/Dokumenty/projects/mergesort/Buffer.h
+
+/home/marcin/Dokumenty/projects/mergesort/globals.h
+
