@@ -11,7 +11,7 @@ void generateProbabilities(std::string filename) {
 	auto* tape = new WriteBuffer(output);
 	Probability* record = nullptr;
 
-	srand(time(NULL));
+	srand(time(nullptr));
 
 	std::cout << "Insert number of records to generate: ";
 	std::cin >> howMany;
@@ -60,7 +60,6 @@ void loadFile(std::string filename)
 	std::getline(std::cin, str);
 	for (i = 0; i < str.length(); i++)
 		filename[i] = str[i];
-	filename[i] = '\0';
 }
 
 void menu(const std::string& filename) {
@@ -143,6 +142,12 @@ bool merge(char print) {
 	Probability* record1 = inputTape1->nextRecord();
 	Probability* record2 = inputTape2->nextRecord();
 	if (!record2) {
+        delete outputTape;
+        delete inputTape2;
+        delete inputTape1;
+        delete output;
+        delete input2;
+        delete input1;
 		return false;
 	}
 	while (true) {
