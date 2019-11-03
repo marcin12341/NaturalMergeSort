@@ -1,19 +1,25 @@
 #pragma once
 #define SIZE 4096
+
 #include "Probability.h"
 #include "File.h"
 #include "globals.h"
 #include <fstream>
-class Buffer
-{
+
+class Buffer {
 private:
 protected:
-    Probability* buffer;
+    Probability *buffer;
     int current;
     int bufferSize;
-    File* file{};
+    File *file{};
 public:
-	Buffer();
-	~Buffer();
+    int getCurrent() { return current; };
+
+    int getBufferSize() { return bufferSize; };
+
+    Buffer();
+
+    ~Buffer();
 };
 

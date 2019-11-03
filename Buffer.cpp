@@ -8,5 +8,5 @@ Buffer::Buffer() {
 
 
 Buffer::~Buffer() {
-    delete []buffer;
+    delete[]buffer;
 }
