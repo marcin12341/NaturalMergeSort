@@ -4,6 +4,7 @@
 #include "ReadBuffer.h"
 #include <algorithm>
 #include <iomanip>
+#include <random>
 
 
 void generateProbabilities(std::string filename) {
@@ -13,20 +14,22 @@ void generateProbabilities(std::string filename) {
     auto *tape = new WriteBuffer(output);
     Probability *record = nullptr;
 
-    srand(time(nullptr));
+    std::random_device rd;
+    std::mt19937 mt(rd());
+    std::uniform_real_distribution<double> number(0.0, 1.0);
 
     std::cout << "Insert number of records to generate: ";
     std::cin >> howMany;
     while (howMany--) {
         double A = 0, B = 0, AB = 0;
         while ((A == 0 || A == 1) && (B == 0 || B == 1)) {
-            A = rand() / double(RAND_MAX);
-            B = rand() / double(RAND_MAX);
+            A = number(mt);
+            B = number(mt);
         }
         double max = std::min(A, B);
         double min = A + B - 1.0;
         while (AB <= 0) {
-            AB = (max - min) * (rand() / (double) RAND_MAX) + min;
+            AB = (max - min) * number(mt) + min;
         }
         record = new Probability(A, B, AB);
         tape->writeValues(record);
@@ -69,7 +72,7 @@ void loadFile(std::string filename) {
     std::cout << "File path: ";
     std::getline(std::cin, str);
     std::getline(std::cin, str);
-    for (int i = 0; i < str.length(); i++)
+    for (size_t i = 0; i < str.length(); i++)
         filename[i] = str[i];
 }
 
