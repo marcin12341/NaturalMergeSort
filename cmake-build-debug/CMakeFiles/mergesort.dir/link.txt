@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/mergesort.dir/Buffer.cpp.o CMakeFiles/mergesort.dir/File.cpp.o CMakeFiles/mergesort.dir/globals.cpp.o CMakeFiles/mergesort.dir/NaturalMergeSort.cpp.o CMakeFiles/mergesort.dir/Probability.cpp.o CMakeFiles/mergesort.dir/ReadBuffer.cpp.o CMakeFiles/mergesort.dir/WriteBuffer.cpp.o  -o mergesort 

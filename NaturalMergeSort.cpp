@@ -58,7 +58,8 @@ void keyboardInput(std::string filename) {
         std::cin >> eventA;
         std::cout << "\nP(B)=";
         std::cin >> eventB;
-        intersectionAB = eventA * eventB;
+        std::cout << "\nP(A|B)=";
+        std::cin >> intersectionAB;
 
         record = new Probability(eventA, eventB, intersectionAB);
         tape->writeValues(record);
