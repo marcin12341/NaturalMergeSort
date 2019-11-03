@@ -1,12 +1,11 @@
 #include "File.h"
+
+#include <utility>
 File::File(std::string name, int place) {
-	filename = name;
+	filename = std::move(name);
 	placeInFile = place;
 }
 
-File::~File() {
-
-}
 
 void File::removeFile() {
 	remove(getFilename().c_str());

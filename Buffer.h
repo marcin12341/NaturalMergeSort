@@ -14,10 +14,6 @@ protected:
     int bufferSize;
     File *file{};
 public:
-    int getCurrent() { return current; };
-
-    int getBufferSize() { return bufferSize; };
-
     Buffer();
 
     ~Buffer();

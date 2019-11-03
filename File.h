@@ -6,17 +6,17 @@
 class File {
 private:
     std::string filename;
-    int placeInFile;
+    long placeInFile;
 public:
     File(std::string name, int place);
 
-    ~File();
+    ~File() = default;
 
     std::string getFilename() { return filename; }
 
-    int getPlaceInFile() { return placeInFile; }
+    long getPlaceInFile() { return placeInFile; }
 
-    void setPlaceInFile(int place) { placeInFile = place; }
+    void setPlaceInFile(std::fpos<mbstate_t> place) { placeInFile = place; }
 
     void removeFile();
 };
