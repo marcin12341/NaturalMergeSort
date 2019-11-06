@@ -22,8 +22,7 @@ WriteBuffer::~WriteBuffer() {
     }
     std::ofstream output(file->getFilename(), std::ios::out | std::ios::app);
     for (int i = 0; i < current; i++) {
-        output << buffer[i].eventA << ' ' << buffer[i].eventB << ' ' << buffer[i].intersectionAB << ' '
-               << buffer[i].conditionalProbability << std::endl;
+        output << buffer[i].eventA << ' ' << buffer[i].eventB << ' ' << buffer[i].intersectionAB << std::endl;
         if (print == 'y') {
             std::cout << "P(A)=" << buffer[i].eventA << "\tP(B)=" << buffer[i].eventB << "\tP(AB)="
                       << buffer[i].intersectionAB << "\tP(A|B)=" << buffer[i].conditionalProbability << std::endl;
@@ -39,7 +38,7 @@ bool WriteBuffer::writeRecord(Probability *record) {
         std::ofstream output(file->getFilename(), std::ios::out | std::ios::app);
         for (current = 0; current < bufferSize; current++) {
             output << buffer[current].eventA << ' ' << buffer[current].eventB << ' ' << buffer[current].intersectionAB
-                   << ' ' << buffer[current].conditionalProbability << std::endl;
+                   << std::endl;
             if (print == 'y') {
                 std::cout << "P(A)=" << buffer[current].eventA << "\tP(B)=" << buffer[current].eventB << "\tP(AB)="
                           << buffer[current].intersectionAB << "\tP(A|B)=" << buffer[current].conditionalProbability

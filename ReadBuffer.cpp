@@ -57,7 +57,6 @@ Probability *ReadBuffer::nextRecord() {
         double value1;
         double value2;
         double value3;
-        double value4;
         Probability *newProbability;
         std::ifstream input(file->getFilename());
         if (!input.good()) {
@@ -68,8 +67,8 @@ Probability *ReadBuffer::nextRecord() {
         counter = 0;
 
         while ((counter < bufferSize) && (!EndOfFile)) {
-            if (input >> value1 >> value2 >> value3 >> value4) {
-                newProbability = new Probability(value1, value2, value3, value4);
+            if (input >> value1 >> value2 >> value3) {
+                newProbability = new Probability(value1, value2, value3);
                 buffer[counter] = *newProbability;
                 counter++;
                 delete newProbability;
