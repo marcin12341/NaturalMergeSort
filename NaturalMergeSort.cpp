@@ -7,7 +7,7 @@
 #include <random>
 
 
-void generateProbabilities(std::string filename) {
+int generateProbabilities(std::string filename) {
     count = false;
     int howMany = 0;
     File *output = new File(std::move(filename), 0);
@@ -20,7 +20,8 @@ void generateProbabilities(std::string filename) {
 
     std::cout << "Insert number of records to generate: ";
     std::cin >> howMany;
-    while (howMany--) {
+    int counter = howMany;
+    while (counter--) {
         double A = 0, B = 0, AB = 0;
         while ((A == 0 || A == 1) && (B == 0 || B == 1)) {
             A = dist(mt);
@@ -32,16 +33,17 @@ void generateProbabilities(std::string filename) {
             AB = (max - min) * dist(mt) + min;
         }
         record = new Probability(A, B, AB);
-        tape->writeValues(record);
+        tape->writeRecord(record);
         delete record;
     }
     tape->writeRemainingValues();
 
     delete tape;
     delete output;
+    return howMany;
 }
 
-void keyboardInput(std::string filename) {
+int keyboardInput(std::string filename) {
     count = false;
     double intersectionAB = 0;
     double eventB = 0;
@@ -53,7 +55,8 @@ void keyboardInput(std::string filename) {
 
     std::cout << "How many records to insert: ";
     std::cin >> howMany;
-    while (howMany--) {
+    int counter = howMany;
+    while (counter--) {
         std::cout << "P(A)=";
         std::cin >> eventA;
         std::cout << "\nP(B)=";
@@ -62,24 +65,45 @@ void keyboardInput(std::string filename) {
         std::cin >> intersectionAB;
 
         record = new Probability(eventA, eventB, intersectionAB);
-        tape->writeValues(record);
+        tape->writeRecord(record);
         delete record;
     }
     tape->writeRemainingValues();
     delete tape;
     delete output;
+    return howMany;
 }
 
-void loadFile(std::string filename) {
+int loadFile(std::string filename) {
     std::string str;
     std::cout << "File path: ";
     std::getline(std::cin, str);
     std::getline(std::cin, str);
     for (size_t i = 0; i < str.length(); i++)
         filename[i] = str[i];
+
+    std::ifstream input(filename);
+    if (!input.good()) {
+        std::cout << "Couldn't read file\n";
+        return 0;
+    }
+    double value1;
+    double value2;
+    double value3;
+    int howMany = 0;
+    bool EndOfFile = false;
+    while (!EndOfFile) {
+        if (input >> value1 >> value2 >> value3) {
+            howMany++;
+            std::cout << "P(A)=" << value1 << "\tP(B)=" << value2 << "\tP(AB)=" << value3 << '\n';
+        } else
+            EndOfFile = true;
+    }
+    input.close();
+    return howMany;
 }
 
-bool menu(const std::string &filename) {
+int menu(const std::string &filename, int &howMany) {
     char choice = 'q';
     std::cout << "Choose a method of creating record file:\n";
     std::cout << "1. Random generation\n";
@@ -88,27 +112,26 @@ bool menu(const std::string &filename) {
     std::cout << "Q. Quit\n";
 
     std::cin >> choice;
-
     switch (choice) {
         case '1':
-            generateProbabilities(filename);
+            howMany = generateProbabilities(filename);
             break;
         case '2':
-            keyboardInput(filename);
+            howMany = keyboardInput(filename);
             break;
         case '3':
-            loadFile(filename);
+            howMany = loadFile(filename);
             break;
         case 'Q':
-            return false;
+            return 0;
         case 'q':
-            return false;
+            return 0;
         default:
             std::cout << "Unknown command, try again\n";
-            menu(filename);
+            menu(filename, howMany);
             break;
     }
-    return true;
+    return howMany;
 }
 
 void divide() {
@@ -255,7 +278,7 @@ void rewriteSorted() {
 
     std::cout << "\nFile after sorting: \n\n";
 
-    while (copy->writeValues(original->nextRecord()));
+    while (copy->writeRecord(original->nextRecord()));
     copy->writeRemainingValues();
 
     remove("1.csv");
@@ -277,7 +300,8 @@ int main() {
     std::cout << std::fixed;
     std::cout << std::setprecision(6);
 
-    while (menu(filename)) {
+    int howMany;
+    while (menu(filename, howMany)) {
         unsigned long long int finalWrite = 0;
         unsigned long long int finalRead = 0;
         unsigned long long int finalDivide = 0;
@@ -286,7 +310,9 @@ int main() {
         std::cout << "Do you want to print file after every sorting phase? y/n" << std::endl;
         std::cin >> print;
 
-        for (int i = 0; i < 1; i++) {
+        int trials = 1;
+
+        for (int i = 0; i < trials; i++) {
             rewrite(filename, "copy.csv");
 
             writeCount = 0;
@@ -316,13 +342,14 @@ int main() {
             finalDivide += dividePhases;
             finalMerge += mergePhases;
         }
-        finalWrite /= 10;
-        finalRead /= 10;
-        finalDivide /= 10;
-        finalMerge /= 10;
+        finalWrite /= trials;
+        finalRead /= trials;
+        finalDivide /= trials;
+        finalMerge /= trials;
 
         std::ofstream output(resultsFilename, std::ios::out | std::ios::app);
-        output << finalWrite << ',' << finalRead << ',' << finalDivide << ',' << finalMerge << std::endl;
+        output << howMany << ',' << finalWrite << ',' << finalRead << ',' << finalDivide << ',' << finalMerge
+               << std::endl;
         output.close();
     }
     return 0;

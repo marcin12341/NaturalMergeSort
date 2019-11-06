@@ -17,8 +17,8 @@ WriteBuffer::WriteBuffer(File *file, char print) {
 WriteBuffer::~WriteBuffer() {
     if (count)
         writeCount++;
-    if (print == 'y') {
-        std::cout << "File after next run: \n";
+    if (print == 'y' && current > 0) {
+        std::cout << "\nFile after next run: \n";
     }
     std::ofstream output(file->getFilename(), std::ios::out | std::ios::app);
     for (int i = 0; i < current; i++) {
@@ -44,27 +44,6 @@ bool WriteBuffer::writeRecord(Probability *record) {
                           << buffer[current].intersectionAB << "\tP(A|B)=" << buffer[current].conditionalProbability
                           << std::endl;
             }
-        }
-        output.close();
-        current = 0;
-    }
-    if (record == nullptr) return false;
-    buffer[current] = *record;
-    current++;
-
-    return true;
-}
-
-bool WriteBuffer::writeValues(Probability *record) {
-    if (current == bufferSize) {
-        if (count)
-            writeCount++;
-        std::ofstream output(file->getFilename(), std::ios::out | std::ios::app);
-        for (current = 0; current < bufferSize; current++) {
-            output << buffer[current].eventA << ' ' << buffer[current].eventB << ' ' << buffer[current].intersectionAB
-                   << std::endl;
-            std::cout << "P(A)=" << buffer[current].eventA << "\tP(B)=" << buffer[current].eventB << "\tP(AB)="
-                      << buffer[current].intersectionAB << std::endl;
         }
         output.close();
         current = 0;

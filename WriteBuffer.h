@@ -14,8 +14,6 @@ public:
 
     bool writeRecord(Probability *record);
 
-    bool writeValues(Probability *record);
-
     void writeRemainingValues();
 };
 
