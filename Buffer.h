@@ -1,5 +1,5 @@
 #pragma once
-#define SIZE 4096
+#define SIZE 1000
 
 #include "Probability.h"
 #include "File.h"
