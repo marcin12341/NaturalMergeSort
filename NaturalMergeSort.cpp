@@ -1,11 +1,10 @@
 ﻿#include <utility>
 
-#include "WriteBuffer.h"
 #include "ReadBuffer.h"
+#include "WriteBuffer.h"
 #include <algorithm>
 #include <iomanip>
 #include <random>
-
 
 int generateProbabilities(std::string filename) {
     count = false;
@@ -95,7 +94,8 @@ int loadFile(std::string filename) {
     while (!EndOfFile) {
         if (input >> value1 >> value2 >> value3) {
             howMany++;
-            std::cout << "P(A)=" << value1 << "\tP(B)=" << value2 << "\tP(AB)=" << value3 << '\n';
+            std::cout << "P(A)=" << value1 << "\tP(B)=" << value2
+                      << "\tP(AB)=" << value3 << '\n';
         } else
             EndOfFile = true;
     }
@@ -136,7 +136,6 @@ int menu(const std::string &filename, int &howMany) {
 
 void divide() {
     count = true;
-    dividePhases++;
 
     File *input = new File("copy.csv", 0);
     File *output1 = new File("1.csv", 0);
@@ -176,7 +175,7 @@ void divide() {
 
 bool merge(char print) {
     count = true;
-    mergePhases++;
+    sortPhases++;
 
     File *input1 = new File("1.csv", 0);
     File *input2 = new File("2.csv", 0);
@@ -304,10 +303,10 @@ int main() {
     while (menu(filename, howMany)) {
         unsigned long long int finalWrite = 0;
         unsigned long long int finalRead = 0;
-        unsigned long long int finalDivide = 0;
-        unsigned long long int finalMerge = 0;
+        unsigned long long int finalPhases = 0;
 
-        std::cout << "Do you want to print file after every sorting phase? y/n" << std::endl;
+        std::cout << "Do you want to print file after every sorting phase? y/n"
+                  << std::endl;
         std::cin >> print;
 
         int trials = 1;
@@ -317,8 +316,7 @@ int main() {
 
             writeCount = 0;
             readCount = 0;
-            dividePhases = 0;
-            mergePhases = 0;
+            sortPhases = 0;
 
             while (!sorted) {
                 divide();
@@ -333,26 +331,20 @@ int main() {
             std::cout << "*****************************************" << std::endl;
             std::cout << "Disk writes:\t" << writeCount << std::endl;
             std::cout << "Disk reads: \t" << readCount << std::endl;
-            std::cout << "Divide phases:\t" << dividePhases << std::endl;
-            std::cout << "Merge phases:\t" << mergePhases << std::endl;
+            std::cout << "Sort phases:\t" << sortPhases << std::endl;
             std::cout << "*****************************************" << std::endl;
 
             finalWrite += writeCount;
             finalRead += readCount;
-            finalDivide += dividePhases;
-            finalMerge += mergePhases;
+            finalPhases += sortPhases;
         }
         finalWrite /= trials;
         finalRead /= trials;
-        finalDivide /= trials;
-        finalMerge /= trials;
+        finalPhases /= trials;
 
         std::ofstream output(resultsFilename, std::ios::out | std::ios::app);
-        output << howMany << ',' << finalWrite << ',' << finalRead << ',' << finalDivide << ',' << finalMerge
-               << std::endl;
+        output << howMany << ',' << finalWrite << ',' << finalRead << ',' << finalPhases << std::endl;
         output.close();
     }
     return 0;
 }
-
-
